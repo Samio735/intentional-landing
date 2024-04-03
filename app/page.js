@@ -12,14 +12,14 @@ export default function Home() {
 
       <h2 className="text-xl  my-6 font-bold">intentional</h2>
 
-      <div className="h-10"></div>
-      <h1 className="text-6xl max-w-lg my-10 font-bold text-center">
-        Anti-distractions, focused browsing
+      <div className="h-16"></div>
+      <h1 className="text-6xl max-w-xl my-14 font-bold text-center">
+        Anti-procrastination, focused browsing
       </h1>
-      <p className="text-center max-w-xl">
+      <p className="text-center max-w-2xl">
         Intentional is an app that allows you to set goals for your browsing
         session, it then blocks you from accessing websites that are irrelevant
-        to your goals
+        to your goals.
       </p>
       <Subscribe />
     </div>

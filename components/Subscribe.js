@@ -34,7 +34,7 @@ export function Subscribe() {
   const [completed, setCompleted] = useState(false);
   const [email, setEmail] = useState("");
   return (
-    <div className="my-10 flex flex-col gap-4 items-center">
+    <div className="my-12 flex flex-col gap-4 items-center">
       <AlertDialog>
         <AlertDialogTrigger asChild>
           <Button>Subscribe to the waiting list </Button>

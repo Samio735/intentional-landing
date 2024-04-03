@@ -14,6 +14,22 @@ import {
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog";
 import { useState } from "react";
+import { databases } from "@/app/appwrite";
+import { ID, Query } from "appwrite";
+
+export const waitingS_DATABASE_ID = "intentional-db"; // Replace with your database ID
+export const waitingS_COLLECTION_ID = "waiting-list"; // Replace with your collection ID
+
+async function addWaiting(waiting) {
+  const response = await databases.createDocument(
+    waitingS_DATABASE_ID,
+    waitingS_COLLECTION_ID,
+    ID.unique(),
+    waiting
+  );
+  console.log(response);
+}
+
 export function Subscribe() {
   const [completed, setCompleted] = useState(false);
   const [email, setEmail] = useState("");
@@ -55,8 +71,7 @@ export function Subscribe() {
             <AlertDialogCancel>Cancel</AlertDialogCancel>
             <AlertDialogAction
               onClick={() => {
-                console.log(email);
-                console.log(completed);
+                addWaiting({ email, "applied-for-beta": completed });
               }}
             >
               Subscribe

@@ -14,12 +14,12 @@ export default function Home() {
 
       <div className="h-16"></div>
       <h1 className="text-6xl max-w-xl my-14 font-bold text-center">
-        Anti-procrastination, focused browsing
+        Do deep work, enter Flow state
       </h1>
       <p className="text-center max-w-2xl">
-        Intentional is an app that allows you to set goals for your browsing
+        Intentional is an app that allows you to set goals for your deep work
         session, it then blocks you from accessing websites that are irrelevant
-        to your goals.
+        to your goals. Enabeling you to achieve flow state.
       </p>
       <Subscribe />
     </div>

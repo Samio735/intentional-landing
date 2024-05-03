@@ -4,6 +4,7 @@ import TodoList from "../components/TodoList";
 import { ModeToggle } from "../components/ModeToggle";
 import { useState } from "react";
 import { Subscribe } from "../components/Subscribe";
+import { Button } from "../components/ui/button";
 
 export default function Home() {
   return (
@@ -21,7 +22,10 @@ export default function Home() {
         session, it then blocks you from accessing websites that are irrelevant
         to your goals. Enabeling you to achieve flow state.
       </p>
-      <Subscribe />
+      {/* <Subscribe /> */}
+      <a href="https://chromewebstore.google.com/detail/intentional/dgigjfomhppeemkonaodgbghfgbelpac">
+        <Button className="my-10">Install for Chrome</Button>
+      </a>
     </div>
   );
 }

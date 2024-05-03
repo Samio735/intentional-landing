@@ -1,4 +1,4 @@
-import { Input } from "@/components/ui/input";
+import { Input } from "./ui/input";
 
 export function NewTodo({ setTodos }) {
   const addTodo = (e) => {

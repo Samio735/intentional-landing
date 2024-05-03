@@ -1,6 +1,6 @@
 "use client";
 
-import { Checkbox } from "@/components/ui/checkbox";
+import { Checkbox } from "./ui/checkbox";
 import { useState } from "react";
 
 export function TodoItem({ text }) {

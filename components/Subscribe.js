@@ -1,6 +1,6 @@
 "use client";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
+import { Button } from "./ui/button";
+import { Input } from "./ui/input";
 import { Checkbox } from "./ui/checkbox";
 import {
   AlertDialog,
@@ -12,9 +12,9 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
   AlertDialogTrigger,
-} from "@/components/ui/alert-dialog";
+} from "./ui/alert-dialog";
 import { useState } from "react";
-import { databases } from "@/app/appwrite";
+import { databases } from "appwrite";
 import { ID, Query } from "appwrite";
 
 export const waitingS_DATABASE_ID = "intentional-db"; // Replace with your database ID

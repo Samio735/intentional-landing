@@ -1,9 +1,7 @@
 "use client";
-import Image from "next/image";
-import TodoList from "../components/TodoList";
+
 import { ModeToggle } from "../components/ModeToggle";
-import { useState } from "react";
-import { Subscribe } from "../components/Subscribe";
+
 import { Button } from "../components/ui/button";
 
 export default function Home() {

@@ -23,16 +23,16 @@ export default function Home() {
       </p>
       {/* <Subscribe /> */}
       <a href="https://chromewebstore.google.com/detail/intentional/dgigjfomhppeemkonaodgbghfgbelpac">
-        <Button className="my-10">Install for Chrome</Button>
+        <Button className="my-10 mb-20">Install for Chrome</Button>
       </a>
       <div className="flex w-full justify-end my-16">
-        <h1 className="text-7xl max-w-xl my-14 font-bold ms-20">
+        <h1 className="text-7xl max-w-sm my-14 font-bold ms-20 mt-20">
           Unlock Your Potential.
         </h1>
         <Image
           className=""
           src={"/Screenshot-showcase.png"}
-          width={600}
+          width={900}
           height={500}
           alt="screenshot"
         />
@@ -41,11 +41,11 @@ export default function Home() {
         <Image
           className=""
           src={"/stop.png"}
-          width={1000}
+          width={900}
           height={500}
           alt="screenshot"
         />
-        <h1 className="text-7xl max-w-sm my-14 font-bold ms-10 ">
+        <h1 className="text-7xl max-w-sm my-14 font-bold ms-10 mt-20 ">
           Stop Getting Distracted.
         </h1>
       </div>

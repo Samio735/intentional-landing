@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { ModeToggle } from "../components/ModeToggle";
 
 import { Button } from "../components/ui/button";
@@ -24,6 +25,35 @@ export default function Home() {
       <a href="https://chromewebstore.google.com/detail/intentional/dgigjfomhppeemkonaodgbghfgbelpac">
         <Button className="my-10">Install for Chrome</Button>
       </a>
+      <div className="flex w-full justify-end my-16">
+        <h1 className="text-7xl max-w-xl my-14 font-bold ms-20">
+          Unlock Your Potential.
+        </h1>
+        <Image
+          className=""
+          src={"/Screenshot-showcase.png"}
+          width={600}
+          height={500}
+          alt="screenshot"
+        />
+      </div>
+      <div className="flex w-full  my-16">
+        <Image
+          className=""
+          src={"/stop.png"}
+          width={1000}
+          height={500}
+          alt="screenshot"
+        />
+        <h1 className="text-7xl max-w-sm my-14 font-bold ms-10 ">
+          Stop Getting Distracted.
+        </h1>
+      </div>
+      <div>
+        <p className="text-center text-gray-300 my-10">
+          © 2024 Made by Samy Rahim.
+        </p>
+      </div>
     </div>
   );
 }

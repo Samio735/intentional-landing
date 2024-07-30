@@ -8,8 +8,6 @@ import { Button } from "../components/ui/button";
 export default function Home() {
   return (
     <div className=" flex flex-col items-center">
-      <ModeToggle />
-
       <h2 className="text-xl  my-6 font-bold">intentional</h2>
 
       <div className="h-16"></div>
